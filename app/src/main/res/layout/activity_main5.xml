@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    tools:context="com.example.sivaram.cardview.Main5Activity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:textAlignment="center"
+        android:layout_marginLeft="75dp"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000"
+        android:text="CURRENCY CONVERTER "/>
+
+
+    <EditText
+        android:layout_marginTop="125dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="USD"
+        android:textColor="#000"
+        android:textSize="22sp"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:id="@+id/aed"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="INR"
+        android:inputType="number"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/submit"
+        android:id="@+id/inr"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit"
+        android:text="SUBMIT"
+        android:background="@drawable/butt"
+        android:layout_below="@+id/aed"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="click"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/submit2"
+        android:text="SUBMIT"
+        android:background="@drawable/butt"
+        android:layout_below="@+id/inr"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="click2"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/butt"
+        android:layout_above="@+id/button4"
+        android:layout_alignStart="@+id/submit2"
+        android:layout_marginBottom="30dp"
+        android:onClick="reset"
+        android:text="RESET" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/butt"
+        android:onClick="back"
+        android:layout_marginLeft="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/reset"
+        android:text="back" />
+</RelativeLayout>
+
